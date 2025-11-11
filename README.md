@@ -69,11 +69,11 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 
 | Memory Location | Program Instruction   | Comments                        |
 |-----------------|-----------------------|---------------------------------|
-| `1000`          | `START: MOV AL,00H`  | Load `00H` in accumulator       |
-| `1003`          | `LOOP : OUT 0C8H,AL` | Send through output port        |
-| `1005`          | `INC AL`             | Increment contents of accumulator |
-| `1007`          | `JNC LOOP`           | Jump if no carry (continue loop) |
-| `1009`          | `JMP START`          | Go to starting location         |
+| 1000          | START: MOV AL,00H  | Load 00H in accumulator       |
+| 1003          | LOOP : OUT 0C8H,AL | Send through output port        |
+| 1005          | INC AL             | Increment contents of accumulator |
+| 1007          | JNC LOOP           | Jump if no carry (continue loop) |
+| 1009          | JMP START          | Go to starting location         |
 
 ---
 
@@ -81,21 +81,26 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 
 | Waveform  | Amplitude | Time period | 
 |-----------|-----------|-------------|
-| Sawtooth  |           |             | 
-| Square    |           |             |
+| Sawtooth  | 8.08v          |   1.642ms          | 
+| Square    | 9.60v          |     6.052ms        |
 ---
-
 ## Model Graph
 
-*(Insert graph/diagram here if available)*
+SQUARE WAVE
+<img width="1280" height="728" alt="image" src="https://github.com/user-attachments/assets/9b22ae56-fd3e-4656-ab0d-2c955d9e01eb" />
+
+SINE WAVE
+<img width="1280" height="678" alt="image" src="https://github.com/user-attachments/assets/3581e92a-c415-4d8c-b4f0-060aa5f5b932" />
+
 
 
 
 ## OUTPUT IMAGE OF DAC(SAWTOOTH WAVE FROM DSO AND SQUARE WAVE FROM DSO)
-
+![WhatsApp Image 2025-11-06 at 19 43 45_1e970ea3](https://github.com/user-attachments/assets/d0108fa5-3ef3-4ce9-a407-1e7a7c7872e3)
+![WhatsApp Image 2025-11-06 at 19 44 02_68daa2b0](https://github.com/user-attachments/assets/ec7b4a7e-9d00-48ba-a637-429f8872ffee)
 
 
 
 ## Result
 
-Thus, the **DAC was interfaced with 8086** and different **waveforms** were successfully generated.
+Thus, the *DAC was interfaced with 8086* and different *waveforms* were successfully generated.
